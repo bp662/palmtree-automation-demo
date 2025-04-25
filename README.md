@@ -38,6 +38,11 @@ This repository showcases an end-to-end automated testing setup using Cypress, M
 
 2. npm install - Install dependencies
 
+Note: Cypress is installed locally as a devDependency.  
+If you get a "Cannot find module 'cypress'" error, run:
+
+npm install cypress --save-dev
+
 3. npx cypress open - Run Cypress tests
 
 4. npx cypress run - Run tests with Mochawesome reporting
