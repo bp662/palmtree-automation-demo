@@ -54,4 +54,4 @@ npm install cypress --save-dev
 
 Below is a screenshot of a sample Mochawesome report generated after running the Cypress tests:
 
-![Sample Test Report](cypress/reports/mochawesome/assets/mochawesome-login-test.png)
+![Sample Test Report](assets/mochawesome-login-test.png)
