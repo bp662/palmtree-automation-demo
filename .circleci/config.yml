@@ -1,32 +1,25 @@
 version: 2.1
 
-orbs:
-  cypress: cypress-io/cypress@3
+executors:
+  node-executor:
+    docker:
+      - image: cypress/browsers:node16.16.0-chrome107-ff107
+    working_directory: ~/app
 
 jobs:
-  cypress-run:
-    docker:
-      - image: cypress/browsers:node-18.12.0-chrome-107
+  test:
+    executor: node-executor
     steps:
       - checkout
       - run:
           name: Install dependencies
-          command: npm ci
+          command: npm install
       - run:
-          name: Run Cypress tests with Mochawesome reporting
+          name: Run Cypress tests
           command: npx cypress run
-      - store_artifacts:
-          path: cypress/videos
-          destination: videos
-      - store_artifacts:
-          path: cypress/screenshots
-          destination: screenshots
-      - store_artifacts:
-          path: cypress/reports/mochawesome
-          destination: mochawesome-report
 
 workflows:
   version: 2
-  run-cypress-tests:
+  test:
     jobs:
-      - cypress-run
+      - test
