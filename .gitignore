@@ -3,3 +3,5 @@ cypress/reports/
 cypress/videos/
 cypress/screenshots/
 cypress.env.json
+# Ignore system files
+.DS_Store
