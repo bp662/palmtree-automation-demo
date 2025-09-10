@@ -70,6 +70,7 @@ To execute all iOS mobile tests back-to-back:
 
 ```bash
 npm run mobile:all
+```
 
 ## Sample Test Report
 
