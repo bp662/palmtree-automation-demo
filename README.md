@@ -33,8 +33,8 @@ This repository showcases an end-to-end automated testing setup using **Cypress*
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/bp662/palmtree-web-automation-demo.git
-   cd palmtree-web-automation-demo
+   git clone https://github.com/bp662/palmtree-automation-demo.git
+   cd palmtree-automation-demo
 
 2. npm install - Install dependencies
 
