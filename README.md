@@ -1,7 +1,7 @@
-# PalmTree Web Automation Demo
+# PalmTree Web & Mobile Automation Demo
 
-Welcome to the PalmTree Solutions Web Automation Demo.  
-This repository showcases an end-to-end automated testing setup using Cypress, Mochawesome reporting, and a clean, CI/CD-ready architecture.
+Welcome to the PalmTree Solutions Automation Demo.  
+This repository showcases an end-to-end automated testing setup using **Cypress** for web and **Appium + WebdriverIO** for mobile (iOS Simulator), with Mochawesome reporting and a clean, CI/CD-ready architecture.
 
 ---
 
@@ -49,6 +49,20 @@ npm install cypress --save-dev
 
 5.	(Optional) View test reports inside /cypress/reports/mochawesome/
 
+---
+
+## Mobile (iOS) – Appium + WebdriverIO
+
+This repo also includes a minimal iOS Safari flow against `saucedemo.com`, aligned with the web test cases.
+
+### Prereqs
+- Xcode with iOS Simulator 18.6 installed (Xcode → Settings → Components → iOS 18.6 + Simulator)
+- Node.js (installed)
+- Appium v3 (`npm i -g appium`)
+- Appium XCUITest driver (`appium driver install xcuitest`)
+
+### Files
+- `mobile-automation/saucedemo-login-addtocart.js` – Sample iOS Safari test
 
 ## Sample Test Report
 
