@@ -64,6 +64,13 @@ This repo also includes a minimal iOS Safari flow against `saucedemo.com`, align
 ### Files
 - `mobile-automation/saucedemo-login-addtocart.js` – Sample iOS Safari test
 
+### Run All Mobile Tests
+
+To execute all iOS mobile tests back-to-back:
+
+```bash
+npm run mobile:all
+
 ## Sample Test Report
 
 Below is a screenshot of a sample Mochawesome report generated after running the Cypress tests:
